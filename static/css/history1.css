@@ -1,0 +1,119 @@
+.history, .historytext{
+  display: flex;
+  flex-direction:column;
+}
+
+.historyof{
+  display: flex;
+  flex-direction:row;
+  margin: 20px 10%;
+  background-color: white;
+  height: 500px;
+  width:80%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.historyimg{
+  width: 34%;
+  height: 100%;
+  margin: 0px 3%;
+  background-image:url("/Project/static/images/monalisa.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#irises{
+background-image:url("/Project/static/images/G.jpg");
+}
+
+#starrynight{
+background-image:url("/Project/static/images/F.jpg");
+}
+
+#thescream{
+background-image:url("/Project/static/images/thescream.png");
+}
+
+.historytext{
+  margin: 40px;
+  width: 60%;
+}
+
+.historytext p{
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.historytext h3{
+  font-size: 32px;
+}
+
+
+@media screen and (max-width: 850px) {
+  .historyof{
+    flex-direction:column;
+    width: 94%;
+    margin: 30px 3%;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px black;
+    height: fit-content;
+  }
+  .historyimg{
+    width:70%;
+    margin:0px 15%;
+    margin-top: 20px;
+    min-height: 400px;
+  }
+  .historytext p,.historytext h3{
+    text-align: center;
+    padding:0px 50px;
+  }
+
+  .historytext{
+    width:100%;
+    margin:0px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .historytext{
+    margin-top: 0px;
+  }
+
+  #thescream, #monalisa{
+    margin-bottom: 15px;
+  }
+
+  #irises, #starrynight{
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #irises, #starrynight{
+    margin-bottom: -25px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #irises, #starrynight{
+    margin-bottom: -65px;
+  }
+  .historytext p,.historytext h3{
+    text-align: center;
+    padding:0px 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #irises, #starrynight{
+    margin-bottom: -97px;
+  }
+
+}
